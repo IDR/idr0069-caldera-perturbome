@@ -1,0 +1,9 @@
+---
+target: "Screen:name:idr0069-caldera-perturbome/screenA"
+path: "idr0039-screenA-plates.tsv"
+continue: "true"
+transfer: "ln_s"
+exclude: "clientpath"
+readers: "readers.txt"
+skip: "checksum"
+parallel_upload: 5
