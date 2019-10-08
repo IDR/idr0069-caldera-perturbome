@@ -1,0 +1,144 @@
+---
+name: idr0069-caldera-perturbome/screenA
+version: 1
+
+defaults:
+  # Should the column be processed when creating bulk-annotations (yes/no)
+  include: no
+  # Columns type of the bulk-annotations column
+  type: string
+
+  # If non-empty a string used to separate multiple fields in a column
+  # White space will be stripped
+  split: ","
+  # Should this column be included in the clients (yes/no)
+  includeclient: yes
+  # Should this column be visible in the clients, if no the column should be
+  # hidden in the client but will still be indexed by the searcher (yes/no)
+  visible: yes
+  # Should empty values be omitted from the client display
+  omitempty: yes
+
+columns:
+
+  - name: Successful Transfer
+    clientname: Successful Transfer
+    include: true
+
+  - name: Treatment Type
+    clientname: Treatment Type
+    include: true
+
+
+  ######################################################################
+  # mapr groups
+  ######################################################################
+
+  - group:
+      namespace: openmicroscopy.org/mapr/organism
+      columns:
+        - name: Characteristics [Organism]
+          clientname: Organism
+          include: yes
+
+  - group:
+      namespace: openmicroscopy.org/mapr/cell_line
+      columns:
+        - name: Characteristics [Cell Line]
+          clientname: Cell Line
+          include: yes
+
+  - group:
+      namespace: openmicroscopy.org/mapr/compound
+      columns:
+        - name: Compound 1 Name
+          clientname: Compound 1 Name
+          include: yes
+        - name: Compound 1 Name
+          clientname: Compound 1 Name URL
+          clientvalue: https://www.ncbi.nlm.nih.gov/pccompound?term={{ value|urlencode }}
+          include: yes
+        - name: Compound 2 Name
+          clientname: Compound 2 Name
+          include: yes
+        - name: Compound 2 Name
+          clientname: Compound 2 Name URL
+          clientvalue: https://www.ncbi.nlm.nih.gov/pccompound?term={{ value|urlencode }}
+          include: yes
+
+  - group:
+      namespace: openmicroscopy.org/mapr/compound/supplementary
+      columns:
+        - name: Compound 1 Identifier
+          clientname: Compound 1 Identifier
+          include: true
+        - name: Compound 1 DrugBank Identifier
+          clientname: Compound 1 DrugBank Identifier
+          include: true
+        - name: Compound 1 PubChem CID
+          clientname: Compound 1 PubChem CID
+          include: true
+        - name: Compound 1 ChEMBL ID
+          clientname: Compound 1 ChEMBL ID
+          include: true
+        - name: Compound 1 ChEMBL ID
+          clientname: ChEMBL Identifier URL
+          clientvalue: >
+            https://www.ebi.ac.uk/chembldb/target/inspect/{{ value|urlencode }}
+          include: true
+        - name: Compound 1 Concentration (microMolar)
+          clientname: Compound 1 Concentration (microMolar)
+          include: true
+        - name: Compound 1 General Target Class
+          clientname: Compound 1 General Target Class
+          include: true
+        - name: Compound 1 General activity
+          clientname: Compound 1 General activity
+          include: true
+        - name: Compound 1 Database Targets EntrezIDs
+          clientname: Compound 1 Database Targets EntrezIDs
+          include: true
+        - name: Compound 2 Identifier
+          clientname: Compound 2 Identifier
+          include: true
+        - name: Compound 2 DrugBank Identifier
+          clientname: Compound 2 DrugBank Identifier
+          include: true
+        - name: Compound 2 PubChem CID
+          clientname: Compound 2 PubChem CID
+          include: true
+        - name: Compound 2 ChEMBL ID
+          clientname: Compound 2 ChEMBL ID
+          include: true
+        - name: Compound 2 ChEMBL ID
+          clientname: ChEMBL Identifier URL
+          clientvalue: >
+            https://www.ebi.ac.uk/chembldb/target/inspect/{{ value|urlencode }}
+          include: true
+        - name: Compound 2 Concentration (microMolar)
+          clientname: Compound 2 Concentration (microMolar)
+          include: true
+        - name: Compound 2 General Target Class
+          clientname: Compound 2 General Target Class
+          include: true
+        - name: Compound 2 General activity
+          clientname: Compound 2 General activity
+          include: true
+        - name: Compound 2 Database Targets EntrezIDs
+          clientname: Compound 2 Database Targets EntrezIDs
+          include: true
+
+
+advanced:
+  ignore_missing_primary_key: yes
+  primary_group_keys:
+    - namespace: openmicroscopy.org/mapr/organism
+      keys:
+        - Organism
+    - namespace: openmicroscopy.org/mapr/cell_line
+      keys:
+        - Cell Line
+    - namespace: openmicroscopy.org/mapr/compound
+      keys:
+        - Compound 1 Name
+        - Compound 2 Name
