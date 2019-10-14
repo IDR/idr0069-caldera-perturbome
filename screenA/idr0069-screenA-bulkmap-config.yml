@@ -52,17 +52,17 @@ columns:
       namespace: openmicroscopy.org/mapr/compound
       columns:
         - name: Compound 1 Name
-          clientname: Compound 1 Name
+          clientname: Compound Name
           include: yes
         - name: Compound 1 Name
-          clientname: Compound 1 Name URL
+          clientname: Compound Name URL
           clientvalue: https://www.ncbi.nlm.nih.gov/pccompound?term={{ value|urlencode }}
           include: yes
         - name: Compound 2 Name
-          clientname: Compound 2 Name
+          clientname: Compound Name
           include: yes
         - name: Compound 2 Name
-          clientname: Compound 2 Name URL
+          clientname: Compound Name URL
           clientvalue: https://www.ncbi.nlm.nih.gov/pccompound?term={{ value|urlencode }}
           include: yes
 
@@ -140,5 +140,4 @@ advanced:
         - Cell Line
     - namespace: openmicroscopy.org/mapr/compound
       keys:
-        - Compound 1 Name
-        - Compound 2 Name
+        - Compound Name
