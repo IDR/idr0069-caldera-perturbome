@@ -58,28 +58,17 @@ columns:
           clientname: Compound Name URL
           clientvalue: https://www.ncbi.nlm.nih.gov/pccompound?term={{ value|urlencode }}
           include: yes
-        - name: Compound 2 Name
-          clientname: Compound Name
-          include: yes
-        - name: Compound 2 Name
-          clientname: Compound Name URL
-          clientvalue: https://www.ncbi.nlm.nih.gov/pccompound?term={{ value|urlencode }}
-          include: yes
-
-  - group:
-      namespace: openmicroscopy.org/mapr/compound/supplementary
-      columns:
         - name: Compound 1 Identifier
-          clientname: Compound 1 Identifier
+          clientname: Compound Identifier
           include: true
         - name: Compound 1 DrugBank Identifier
           clientname: Compound 1 DrugBank Identifier
           include: true
         - name: Compound 1 PubChem CID
-          clientname: Compound 1 PubChem CID
+          clientname: Compound PubChem CID
           include: true
         - name: Compound 1 ChEMBL ID
-          clientname: Compound 1 ChEMBL ID
+          clientname: Compound ChEMBL ID
           include: true
         - name: Compound 1 ChEMBL ID
           clientname: ChEMBL Identifier URL
@@ -87,28 +76,39 @@ columns:
             https://www.ebi.ac.uk/chembldb/target/inspect/{{ value|urlencode }}
           include: true
         - name: Compound 1 Concentration (microMolar)
-          clientname: Compound 1 Concentration (microMolar)
+          clientname: Compound Concentration (microMolar)
           include: true
         - name: Compound 1 General Target Class
-          clientname: Compound 1 General Target Class
+          clientname: Compound General Target Class
           include: true
         - name: Compound 1 General activity
-          clientname: Compound 1 General activity
+          clientname: Compound General activity
           include: true
         - name: Compound 1 Database Targets EntrezIDs
-          clientname: Compound 1 Database Targets EntrezIDs
+          clientname: Compound Database Targets EntrezIDs
           include: true
+
+  - group:
+      namespace: openmicroscopy.org/mapr/compound
+      columns:
+        - name: Compound 2 Name
+          clientname: Compound Name
+          include: yes
+        - name: Compound 2 Name
+          clientname: Compound Name URL
+          clientvalue: https://www.ncbi.nlm.nih.gov/pccompound?term={{ value|urlencode }}
+          include: yes
         - name: Compound 2 Identifier
-          clientname: Compound 2 Identifier
+          clientname: Compound Identifier
           include: true
         - name: Compound 2 DrugBank Identifier
-          clientname: Compound 2 DrugBank Identifier
+          clientname: Compound DrugBank Identifier
           include: true
         - name: Compound 2 PubChem CID
-          clientname: Compound 2 PubChem CID
+          clientname: Compound PubChem CID
           include: true
         - name: Compound 2 ChEMBL ID
-          clientname: Compound 2 ChEMBL ID
+          clientname: Compound ChEMBL ID
           include: true
         - name: Compound 2 ChEMBL ID
           clientname: ChEMBL Identifier URL
@@ -116,18 +116,17 @@ columns:
             https://www.ebi.ac.uk/chembldb/target/inspect/{{ value|urlencode }}
           include: true
         - name: Compound 2 Concentration (microMolar)
-          clientname: Compound 2 Concentration (microMolar)
+          clientname: Compound Concentration (microMolar)
           include: true
         - name: Compound 2 General Target Class
-          clientname: Compound 2 General Target Class
+          clientname: Compound General Target Class
           include: true
         - name: Compound 2 General activity
-          clientname: Compound 2 General activity
+          clientname: Compound General activity
           include: true
         - name: Compound 2 Database Targets EntrezIDs
-          clientname: Compound 2 Database Targets EntrezIDs
+          clientname: Compound Database Targets EntrezIDs
           include: true
-
 
 advanced:
   ignore_missing_primary_key: yes
