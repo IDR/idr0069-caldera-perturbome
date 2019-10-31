@@ -20,6 +20,9 @@ defaults:
   omitempty: yes
 
 columns:
+  - name: Batch Number
+    clientname: Batch Number
+    include: true
 
   - name: Successful Transfer
     clientname: Successful Transfer
@@ -102,8 +105,8 @@ columns:
         - name: Compound 1 General activity
           clientname: Compound General activity
           include: true
-        - name: Compound 1 Database Targets EntrezIDs
-          clientname: Compound Database Targets EntrezIDs
+        - name: Compound 1 Database Targets Entrez IDs
+          clientname: Compound Database Targets Entrez IDs
           include: true
 
   - group:
@@ -138,8 +141,8 @@ columns:
         - name: Compound 2 General activity
           clientname: Compound General activity
           include: true
-        - name: Compound 2 Database Targets EntrezIDs
-          clientname: Compound Database Targets EntrezIDs
+        - name: Compound 2 Database Targets Entrez IDs
+          clientname: Compound Database Targets Entrez IDs
           include: true
 
 advanced:
