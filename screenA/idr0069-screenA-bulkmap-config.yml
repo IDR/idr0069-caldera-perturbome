@@ -24,7 +24,7 @@ columns:
     clientname: Batch Number
     include: true
 
-  - name: Successful Transfer
+  - name: Sucessful Transfer
     clientname: Successful Transfer
     include: true
 
@@ -105,8 +105,8 @@ columns:
         - name: Compound 1 General activity
           clientname: Compound General activity
           include: true
-        - name: Compound 1 Database Targets Entrez IDs
-          clientname: Compound Database Targets Entrez IDs
+        - name: Compound 1 Target Entrez IDs
+          clientname: Compound Target Entrez IDs
           include: true
 
   - group:
@@ -141,8 +141,8 @@ columns:
         - name: Compound 2 General activity
           clientname: Compound General activity
           include: true
-        - name: Compound 2 Database Targets Entrez IDs
-          clientname: Compound Database Targets Entrez IDs
+        - name: Compound 2 Target Entrez IDs
+          clientname: Compound Target Entrez IDs
           include: true
 
 advanced:
