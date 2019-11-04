@@ -12,7 +12,7 @@ Study Organism Term Source REF	NCBITaxon
 Study Organism Term Accession	9606																															
 Study Screens Number	1																																
 Study External URL	https://github.com/mcaldera/Perturbome	https://tinyurl.com/y22ep2em																								
-Study Public Release Date	2019-11-04																																										
+Study Public Release Date	2019-11-05																																										
 # Study Publication																																	
 Study PubMed ID																																	
 Study Publication Title	Mapping the perturbome network of cellular perturbations																										
