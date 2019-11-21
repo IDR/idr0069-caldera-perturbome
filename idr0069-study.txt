@@ -14,11 +14,11 @@ Study Screens Number	1
 Study External URL	https://github.com/mcaldera/Perturbome	https://tinyurl.com/y22ep2em																								
 Study Public Release Date	2019-11-05																																										
 # Study Publication																																	
-Study PubMed ID																																	
+Study PubMed ID	31723137																																
 Study Publication Title	Mapping the perturbome network of cellular perturbations																										
 Study Author List	Caldera M, Müller F, Kaltenbrunner I, Licciardello MP, Lardeau C, Kubicek S, Menche J																								
-Study PMC ID																																	
-Study DOI																																												
+Study PMC ID	PMC6853941																																
+Study DOI	https://doi.org/10.1038/s41467-019-13058-9																																											
 # Study Contacts																																	
 Study Person Last Name	Menche																																
 Study Person First Name	Jörg																																
