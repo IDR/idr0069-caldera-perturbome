@@ -27,7 +27,7 @@ Study Person Address	Lazarettgasse 14, AKH BT 25.3, 1090 Vienna, Austria
 Study Person ORCID	https://orcid.org/0000-0002-1583-6404																													
 Study Person Roles	submitter																																												
 # Study License and Data DOI																																	
-Study License	CC-BY-NC 4.0																														
+Study License	CC BY-NC 4.0																														
 Study License URL	https://creativecommons.org/licenses/by-nc/4.0/																																
 Study Copyright	Caldera et al.																																
 Study Data Publisher	University of Dundee																								
