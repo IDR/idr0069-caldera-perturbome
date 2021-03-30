@@ -57,10 +57,11 @@ columns:
         - name: Compound 1 Name
           clientname: Compound Name
           include: yes
-        - name: Compound 1 Name
+        - name: Compound 1 PubChem CID
           clientname: Compound Name URL
-          clientvalue: https://www.ncbi.nlm.nih.gov/pccompound?term={{ value|urlencode }}
-          include: yes
+          clientvalue: >
+            https://pubchem.ncbi.nlm.nih.gov/compound/{{ value|urlencode }}
+          include: true
 
   - group:
       namespace: openmicroscopy.org/mapr/compound
@@ -68,10 +69,11 @@ columns:
         - name: Compound 2 Name
           clientname: Compound Name
           include: yes
-        - name: Compound 2 Name
+        - name: Compound 2 PubChem CID
           clientname: Compound Name URL
-          clientvalue: https://www.ncbi.nlm.nih.gov/pccompound?term={{ value|urlencode }}
-          include: yes
+          clientvalue: >
+            https://pubchem.ncbi.nlm.nih.gov/compound/{{ value|urlencode }}
+          include: true
 
   - group:
       namespace: openmicroscopy.org/mapr/compound/supplementary
@@ -158,3 +160,4 @@ advanced:
     - namespace: openmicroscopy.org/mapr/compound
       keys:
         - Compound Name
+        - Compound Name URL
